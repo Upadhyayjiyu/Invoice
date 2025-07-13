@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invoice</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="invoice-container">
+    <header>
+      <div class="company-info">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="Company Logo" class="company-logo" />
+        <div>
+          <h1>Creative Solutions Ltd.</h1>
+          <p>123 Innovation Drive<br />Tech City, TX 75001<br />Email: billing@creativesol.com</p>
+        </div>
+      </div>
+      <div class="invoice-meta">
+        <h2>Invoice</h2>
+        <p><strong>Invoice #: </strong>INV-20250713-001</p>
+        <p><strong>Date: </strong>July 13, 2025</p>
+        <p><strong>Due Date: </strong>August 13, 2025</p>
+      </div>
+    </header>
+
+    <section class="client-info">
+      <h3>Bill To:</h3>
+      <p>
+        John Doe<br />
+        Acme Corp.<br />
+        456 Business Rd.<br />
+        Industry City, CA 94016<br />
+        Email: john.doe@acmecorp.com
+      </p>
+    </section>
+
+    <section class="invoice-items">
+      <table>
+        <thead>
+          <tr>
+            <th>Service Description</th>
+            <th>Qty</th>
+            <th>Rate ($)</th>
+            <th>Amount ($)</th>
+          </tr>
+        </thead>
+        <tbody id="invoice-body">
+          <tr>
+            <td>Website Design & Development</td>
+            <td contenteditable="true" class="qty">1</td>
+            <td contenteditable="true" class="rate">3000.00</td>
+            <td class="amount">$3,000.00</td>
+          </tr>
+          <tr>
+            <td>SEO Optimization</td>
+            <td contenteditable="true" class="qty">1</td>
+            <td contenteditable="true" class="rate">800.00</td>
+            <td class="amount">$800.00</td>
+          </tr>
+          <tr>
+            <td>Hosting (1 Year)</td>
+            <td contenteditable="true" class="qty">1</td>
+            <td contenteditable="true" class="rate">120.00</td>
+            <td class="amount">$120.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="summary">
+      <table>
+        <tbody>
+          <tr>
+            <td>Subtotal:</td>
+            <td id="subtotal">$3,920.00</td>
+          </tr>
+          <tr>
+            <td>Downpayment (25%):</td>
+            <td id="downpayment">$980.00</td>
+          </tr>
+          <tr class="total">
+            <td>Balance Due:</td>
+            <td id="balance">$2,940.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="payment">
+      <a href="https://www.paypal.com/paypalme/youraccount" target="_blank" class="pay-btn">Pay Now</a>
+    </section>
+
+    <section class="thank-you">
+      <p>Thank you for your business, John! We appreciate working with you. Please don't hesitate to reach out if you have questions.</p>
+      <img src="https://i.imgflip.com/5n6xps.jpg" alt="Friendly meme" class="meme" />
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

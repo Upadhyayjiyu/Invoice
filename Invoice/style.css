@@ -1,0 +1,157 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  padding: 20px;
+  color: #333;
+}
+
+.invoice-container {
+  max-width: 700px;
+  background: #fff;
+  margin: auto;
+  padding: 25px 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.company-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.invoice-meta h2 {
+  color: #2a87d9;
+  margin-bottom: 8px;
+}
+
+.invoice-meta p {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.client-info {
+  margin-bottom: 25px;
+}
+
+.client-info h3 {
+  margin-bottom: 10px;
+  color: #2a87d9;
+}
+
+.invoice-items table,
+.summary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.invoice-items th,
+.invoice-items td,
+.summary td {
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.invoice-items th {
+  background: #2a87d9;
+  color: white;
+  font-weight: 600;
+}
+
+.invoice-items td:nth-child(2),
+.invoice-items td:nth-child(3),
+.invoice-items td:nth-child(4),
+.summary td:nth-child(2) {
+  text-align: right;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+.summary td {
+  border: none;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.summary tr.total td {
+  font-size: 1.2rem;
+  border-top: 2px solid #2a87d9;
+  color: #2a87d9;
+}
+
+.payment {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pay-btn {
+  background-color: #2a87d9;
+  color: white;
+  padding: 14px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #1e5ea8;
+}
+
+.thank-you {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.thank-you p {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.meme {
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .company-info {
+    justify-content: center;
+  }
+  .invoice-meta {
+    text-align: center;
+  }
+  .pay-btn {
+    width: 100%;
+    padding: 14px 0;
+  }
+}
